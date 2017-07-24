@@ -1,0 +1,1 @@
+<?php exit;?>{"ucsso":"0","ucssocfg":"","register":"1","regnamerule":"\/^(1)[0-9]{10}$\/","regnotallow":"admin,member,user,administrator"}
