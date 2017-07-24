@@ -17,12 +17,11 @@ return array(
 	'SITE_NAME'                     => '哮天犬', //网站的名称
 	'SITE_TIME_FORMAT'              => 'Y-m-d H:i', //时间显示格式，与date函数一致，默认Y-m-d H:i:s
 	'SITE_LANGUAGE'                 => 'zh-cn', //网站的语言
-	'SITE_THEME'                    => 'default', //网站的主题风格
-	'SITE_TEMPLATE'                 => 'default', //网站的模板目录
+	'SITE_THEME'                    => 'xtq', //网站的主题风格
+	'SITE_TEMPLATE'                 => 'xtq', //网站的模板目录
 	'SITE_TIMEZONE'                 => 8, //所在的时区常量
 	'SITE_DOMAINS'                  => '', //网站的其他域名
 	'SITE_REWRITE'                  => 0, //
-	'SITE_MOBILE_OPEN'              => 1, //是否自动识别移动端并强制定向到移动端域名
 	'SITE_MOBILE'                   => '', //移动端域名
 	'SITE_SEOJOIN'                  => '_', //网站SEO间隔符号
 	'SITE_TITLE'                    => '哮天犬', //网站首页SEO标题

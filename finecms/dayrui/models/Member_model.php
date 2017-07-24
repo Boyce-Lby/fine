@@ -432,9 +432,10 @@ class Member_model extends CI_Model {
         // 验证邮箱
         if (!$data['email'] || !preg_match('/^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/', $data['email'])) {
             return -2;
-        } elseif ($this->db->where('email', $data['email'])->count_all_results('member')) {
-            return -3;
-        }
+        } 
+        // elseif ($this->db->where('email', $data['email'])->count_all_results('member')) {
+        //     return -3;
+        // }
 
         /*
         // 验证手机

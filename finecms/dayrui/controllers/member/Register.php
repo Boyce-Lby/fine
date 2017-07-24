@@ -11,7 +11,25 @@
 
 class Register extends M_Controller {
 
-
+	public function myCheckUsername(){
+		if (IS_POST) {
+			$data = $this->input->post('data', TRUE);
+		}
+		if (!$data['username']) {
+			$error = array('name' => 'username', 'msg' => fc_lang('请输入手机号'));
+		} else {
+				if (strlen($data['username']) != 11 || !is_numeric($data['username'])) {
+						$error = array('name' => 'username', 'msg' => fc_lang('手机号码必须是11位的整数'));
+				} elseif ($this->db->where('username', $data['username'])->count_all_results('member')) {
+						$error = array('name' => 'username', 'msg' => fc_lang('该会员手机号码已经被注册'));
+				}
+		}
+		if (IS_AJAX) {
+				$error && exit(dr_json(0, $error['msg']));
+				$id > 0 && exit(json_encode(array(
+					'status' => 1)));
+			}
+	}
 	/**
 	 * 注册
 	 */
