@@ -22,6 +22,7 @@ return array(
 	'SITE_TIMEZONE'                 => 8, //所在的时区常量
 	'SITE_DOMAINS'                  => '', //网站的其他域名
 	'SITE_REWRITE'                  => 0, //
+	'SITE_MOBILE_OPEN'              => 1, //是否自动识别移动端并强制定向到移动端域名
 	'SITE_MOBILE'                   => '', //移动端域名
 	'SITE_SEOJOIN'                  => '_', //网站SEO间隔符号
 	'SITE_TITLE'                    => '哮天犬', //网站首页SEO标题
