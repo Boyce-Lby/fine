@@ -1,0 +1,666 @@
+{template "header.html"}
+<!-- <link rel="shortcut icon" href="{THEME_PATH}xtq/img/favicon.png"> -->
+
+<!--external css-->
+<link rel="stylesheet" href="{THEME_PATH}xtq/css/flexslider.css" />
+<link href="{THEME_PATH}xtq/assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+<link rel="stylesheet" href="{THEME_PATH}xtq/assets/owlcarousel/owl.carousel.css">
+<link rel="stylesheet" href="{THEME_PATH}xtq/assets/owlcarousel/owl.theme.css">
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="{THEME_PATH}xtq/css/parallax-slider/parallax-slider.css" />
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.6/summernote.css" rel="stylesheet">
+
+<script type="text/javascript" src="{THEME_PATH}xtq/js/parallax-slider/modernizr.custom.28468.js">
+</script>
+
+
+
+
+
+
+
+<!--面包屑导航开始-->
+
+<div class="breadcrumbs">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-4">
+
+                <h1>社区生活帖子</h1>
+
+            </div>
+
+            <div class="col-lg-8 col-sm-8">
+
+                <ol class="breadcrumb pull-right">
+
+                    <li><a href="/">首页</a></li>
+
+                    <li class="active">社区生活帖子</li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--面包屑导航结束-->
+
+
+
+<!--container start-->
+
+<div class="my_con">
+
+    <div class="login-bg">
+
+        <div class="container" style="padding:20px 0 100px 0;">
+
+            <div class="row">
+
+                <div class="col-md-9">
+
+                    <div class="topic-detail panel panel-default">
+
+                        <div class="panel-heading media clearfix">
+
+                            <div class="media-body">
+
+                                <h1 class="media-heading">
+
+                                    {$title}
+
+
+
+                                </h1>
+
+                                <div class="info">
+
+                                    <a data-author="true" class="user-name" data-name="{$author}" href="#">Daowei</a> · 发布于 <abbr class="timeago" title="">{$updatetime}</abbr> · {$view} 次阅读
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel-body markdown markdown-toc">
+                            {$content}
+                        </div>
+
+
+
+
+
+                        <div class="panel-footer clearfix">
+
+                            <div class="opts">
+
+                                <a data-count="1" data-state="" data-type="Topic" data-id="9437" class="likeable  tooltipstered" href="#"><i class="fa fa-heart"></i> <span>1 个赞</span></a>
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="alert alert-block topic-copyright">
+
+                        <div class="markdown">
+
+                            转载文章时务必注明原作者及原始链接，并注明「发表于 哮天犬 」，并不得对作品进行修改。
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="no-result">
+
+                        暂无回复。
+
+                    </div>
+
+
+
+                    <div id="replies" class="panel panel-default" data-last-floor="5">
+
+                        <div class="total panel-heading hide-ios">
+
+                            共收到 <b>5</b> 条回复
+
+                        </div>
+
+                        <div class="items panel-body">
+
+                            <div class="reply">
+
+                                <div>
+
+                                    <div class="avatar">
+
+                                        <a title="hello2014 (大海)" href="#"><img class="media-object avatar-48" src="{THEME_PATH}xtq/img/head.jpg"></a>
+
+                                    </div>
+
+                                    <div class="infos">
+
+                                        <div class="info">
+
+                                            <span class="name">
+
+            <a class="user-name" data-name="大海" href="#">hello2014</a>
+
+          </span> ·
+
+                                            <span class="floor">#1</span> ·
+
+                                            <a class="time" href="#reply-77607"><abbr class="timeago" title="2017年05月31日">2 月前</abbr></a>
+
+                                            <span class="opts pull-right">
+
+              <span class="hideable">
+
+              <a class="edit fa fa-pencil" data-uid="1203" title="修改回帖" href="#"></a>
+
+              <a class="fa fa-pencil" data-uid="1203" title="修改回帖" href="#"></a>
+
+              <a title="回复此楼" class="btn-reply fa fa-mail-reply" href="#"></a>
+
+              </span>
+
+                                            <a title="赞" class="likeable " href="#"><i class="fa fa-heart"></i> <span></span></a>
+
+                                            </span>
+
+                                        </div>
+
+
+
+                                        <div class="markdown">
+
+                                            <p>感谢社区组织者，感谢社区，未来将继续为提高社区知名度和活跃度，发光发热！ </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="reply">
+
+                                <div>
+
+                                    <div class="avatar">
+
+                                        <a title="wolf (wolf)" href="/wolf"><img class="media-object avatar-48" src="{THEME_PATH}xtq/img/head.jpg"></a>
+
+                                    </div>
+
+                                    <div class="infos">
+
+                                        <div class="info">
+
+                                            <span class="name">
+
+            <a class="user-name" data-name="wolf" href="#">wolf</a>
+
+          </span> ·
+
+                                            <span class="floor">#2</span> ·
+
+                                            <a class="time" href="#reply-77612"><abbr class="timeago" title="2017年05月31日">2 月前</abbr></a>
+
+                                            <span class="opts pull-right">
+
+              <span class="hideable">
+
+              <a class="edit fa fa-pencil" data-uid="5953" title="修改回帖" href="#"></a>
+
+              <a title="回复此楼" class="btn-reply fa fa-mail-reply" href="#"></a>
+
+              </span>
+
+                                            <a title="赞" class="likeable " href="#"><i class="fa fa-heart"></i> <span></span></a>
+
+                                            </span>
+
+                                        </div>
+
+
+
+                                        <div class="markdown">
+
+                                            <p> 哇 能收到卫衣很开心啊</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="reply">
+
+                                <div>
+
+                                    <div class="avatar">
+
+                                        <a title="Litter (七月)" href="#"><img class="media-object avatar-48" src="{THEME_PATH}xtq/img/head.jpg"></a>
+
+                                    </div>
+
+                                    <div class="infos">
+
+                                        <div class="info">
+
+                                            <span class="name">
+
+            <a class="user-name" data-name="七月" href="#">Litter</a>
+
+          </span> ·
+
+                                            <span class="floor">#3</span> ·
+
+                                            <a class="time" href="#reply-77625"><abbr class="timeago" title="2017年05月31日">2 月前</abbr></a>
+
+                                            <span class="opts pull-right">
+
+              <span class="hideable">
+
+              <a class="edit fa fa-pencil" data-uid="16878" title="修改回帖" href="#"></a>
+
+              <a title="回复此楼" class="btn-reply fa fa-mail-reply" href="#"></a>
+
+              </span>
+
+                                            <a title="赞" class="likeable " href="#"><i class="fa fa-heart"></i> <span></span></a>
+
+                                            </span>
+
+                                        </div>
+
+
+
+                                        <div class="markdown">
+
+                                            <p>还有T恤耶</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="reply">
+
+                                <div>
+
+                                    <div class="avatar">
+
+                                        <a title="026" href="#"><img class="media-object avatar-48" src="{THEME_PATH}xtq/img/head.jpg"></a>
+
+                                    </div>
+
+                                    <div class="infos">
+
+                                        <div class="info">
+
+                                            <span class="name">
+
+            <a class="user-name" data-name="" href="#">026</a>
+
+          </span> ·
+
+                                            <span class="floor">#4</span> ·
+
+                                            <a class="time" href="#reply-81882"><abbr class="timeago" title="2017年07月19日">1 天前</abbr></a>
+
+                                            <span class="opts pull-right">
+
+              <span class="hideable">
+
+              <a class="edit fa fa-pencil" data-uid="3623" title="修改回帖" href="#"></a>
+
+              <a title="回复此楼" class="btn-reply fa fa-mail-reply" href="#"></a>
+
+              </span>
+
+                                            <a title="赞" class="likeable " href="#"><i class="fa fa-heart"></i> <span></span></a>
+
+                                            </span>
+
+                                        </div>
+
+                                        <div class="reply-to-block" data-reply-to-id="77607">
+
+                                            <div class="info">
+
+                                                对
+
+                                                <a data-remote="true" href="#">
+
+                                                    <img class="media-object avatar-16" src="{THEME_PATH}xtq/img/head.jpg"><span class="user-name">hello2014</span>
+
+                                                    <span class="reply-floor">#1</span>
+
+                                                </a> 回复
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="markdown">
+
+                                            <p><a href="#" class="user-mention" title="@wolf"><i>@</i>wolf</a> <a href="#" class="user-mention" title="@Litter"><i>@</i>Litter</a> 已经邮寄</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="reply">
+
+                                <div>
+
+                                    <div class="avatar">
+
+                                        <a title="wolf (wolf)" href="#"><img class="media-object avatar-48" src="{THEME_PATH}xtq/img/head.jpg"></a>
+
+                                    </div>
+
+                                    <div class="infos">
+
+                                        <div class="info">
+
+                                            <span class="name">
+
+            <a class="user-name" data-name="wolf" href="#">wolf</a>
+
+          </span> ·
+
+                                            <span class="floor">#5</span> ·
+
+                                            <a class="time" href="#reply-81902"><abbr class="timeago" title="2017年07月20日">1 天前</abbr></a>
+
+                                            <span class="opts pull-right">
+
+              <span class="hideable">
+
+              <a class="edit fa fa-pencil" data-uid="5953" title="修改回帖" href="#"></a>
+
+              <a title="回复此楼" class="btn-reply fa fa-mail-reply" href="#"></a>
+
+              </span>
+
+                                            <a title="赞" class="likeable " href="#"><i class="fa fa-heart"></i> <span></span></a>
+
+                                            </span>
+
+                                        </div>
+
+                                        <div class="reply-to-block" data-reply-to-id="81882">
+
+                                            <div class="info">
+
+                                                对
+
+                                                <a data-remote="true" href="#">
+
+                                                    <img class="media-object avatar-16" src="{THEME_PATH}xtq/img/head.jpg"><span class="user-name">026</span>
+
+                                                    <span class="reply-floor">#4</span>
+
+                                                </a> 回复
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="markdown">
+
+                                            <p>好滴！</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+
+                            <div id="reply" class="form box">
+
+                                <div style="padding:20px;" data-turbolinks-action="replace">
+
+                                    需要 <a class="btn btn-primary" href="login.html">登录</a> 后方可回复, 如果你还没有账号请点击这里 <a class="btn btn-danger" href="registion.html">注册</a>。
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+
+                            <div id="reply" class="form box">
+
+                                <form action="" method="post">
+
+                                    <div id="summernote">评论</div>
+
+                                    <input class="btn btn-primary" type="submit" value="提交">
+
+                                </form>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">相关话题</div>
+
+                        <ul class="list-group">
+                            {list action=module catid=30 order=displayorder,updatetime page=1}
+                            <li class="list-group-item"><a href="{$t.url}">{$t.title}</a></li>
+                            {/list}
+
+
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="sidebar hidden-mobile col-md-3">
+
+
+
+                    <div id="topic-author-info" class="panel profile panel-default">
+
+                        <div class="panel-heading">作者</div>
+
+                        <div class="panel-body">
+
+                            <div class="media">
+
+                                <div class="avatar media-left">
+
+                                    <div class="image">
+
+                                        <a title="{$author}" href="#"><img class="media-object avatar-48" src="{THEME_PATH}xtq/img/head.jpg"></a>
+
+                                    </div>
+
+                                    <div class="level"><span class="label label-success role">高级会员</span></div>
+
+                                </div>
+
+                                <div class="media-body">
+
+                                    <div class="item">
+
+                                        {$author}
+
+                                    </div>
+
+                                    <div class="item number">
+
+                                        第 19135 位会员 / <span title="注册日期">2017-07-12</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+                            <div class="tagline row">
+
+                                “ 这家伙很懒，什么个性签名都没有留下。 ”
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--container end-->
+
+
+
+
+{template "footer.html"}
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="{THEME_PATH}xtq/js/hover-dropdown.js"></script>
+<script defer src="{THEME_PATH}xtq/js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="{THEME_PATH}xtq/assets/bxslider/jquery.bxslider.js"></script>
+
+<script src="{THEME_PATH}xtq/js/jquery.easing.min.js"></script>
+<script src="{THEME_PATH}xtq/js/link-hover.js"></script>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.6/summernote.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.6/lang/summernote-zh-CN.js"></script>
+
+
+
+<script>
+    wow = new WOW({
+
+        boxClass: 'wow', // default
+
+        animateClass: 'animated', // default
+
+        offset: 0 // default
+
+    })
+
+    wow.init();
+
+    $(document).ready(function() {
+
+        $('#summernote').summernote({
+
+            height: 200,
+
+            minHeight: 100,
+
+            maxHeight: 300,
+
+            lang: 'zh-CN'
+
+        });
+
+    });
+</script>
+
+</body>
+
+
+
+</html>

@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; Charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; Charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="{$meta_keywords}">
     <meta name="description" content="{$meta_description}">
-    <link rel="shortcut icon" href="{THEME_PATH}favicon.png"> 
+    <link rel="shortcut icon" href="{THEME_PATH}favicon.png">
 
     <title>{$meta_title}</title>
 
@@ -21,8 +21,10 @@
     <link href="{THEME_PATH}xtq/css/style.css" rel="stylesheet">
     <link href="{THEME_PATH}xtq/css/style-responsive.css" rel="stylesheet" />
 
-    
-	<script type="text/javascript">var memberpath = "{MEMBER_PATH}";</script>
+
+    <script type="text/javascript">
+        var memberpath = "{MEMBER_PATH}";
+    </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -55,10 +57,12 @@
                     <li>
                         <a href="{$t.url}">{$t.name}</a>
                     </li>
-                    {/list}
-                    {if $member}
+                    {/list} {if $member}
                     <li>
                         <a href="{MEMBER_URL}">个人中心</a>
+                    </li>
+                    <li>
+                        <a href="{dr_member_url('login/out')}">退出</a>
                     </li>
                     {else}
                     <li>

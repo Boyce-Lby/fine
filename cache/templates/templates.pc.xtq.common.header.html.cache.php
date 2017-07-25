@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; Charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; Charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="<?php echo $meta_keywords; ?>">
     <meta name="description" content="<?php echo $meta_description; ?>">
-    <link rel="shortcut icon" href="<?php echo THEME_PATH; ?>favicon.png"> 
+    <link rel="shortcut icon" href="<?php echo THEME_PATH; ?>favicon.png">
 
     <title><?php echo $meta_title; ?></title>
 
@@ -21,8 +21,10 @@
     <link href="<?php echo THEME_PATH; ?>xtq/css/style.css" rel="stylesheet">
     <link href="<?php echo THEME_PATH; ?>xtq/css/style-responsive.css" rel="stylesheet" />
 
-    
-	<script type="text/javascript">var memberpath = "<?php echo MEMBER_PATH; ?>";</script>
+
+    <script type="text/javascript">
+        var memberpath = "<?php echo MEMBER_PATH; ?>";
+    </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -58,6 +60,9 @@
                     <?php } }  if ($member) { ?>
                     <li>
                         <a href="<?php echo MEMBER_URL; ?>">个人中心</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo dr_member_url('login/out'); ?>">退出</a>
                     </li>
                     <?php } else { ?>
                     <li>

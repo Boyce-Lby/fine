@@ -515,7 +515,7 @@ class Member_model extends CI_Model {
             $randcode = $regverify == 3 ? rand(100000, 999999) : 0;
             $this->db->insert('member', array(
                 'salt' => $salt,
-                'name' => '',
+                'name' => $data['username'],
                 'phone' => $data['phone'] ? $data['phone'] : '',
                 'regip' => $this->input->ip_address(),
                 'email' => $data['email'],

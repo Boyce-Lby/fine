@@ -87,8 +87,8 @@ p {
 
 .head-section .nav li a,
 .head-section .nav li.active ul.dropdown-menu li a {
-    color: #999;
-    font-size: 14px;
+    color: #333;
+    font-size: 18px;
     font-weight: 300;
     background: none;
 }
@@ -729,14 +729,23 @@ ul.about-flex-slides {
 
 
 /*.view-tenth:hover img {
+
     -webkit-transform: scale(5);
+
     -moz-transform: scale(5);
+
     -o-transform: scale(5);
+
     -ms-transform: scale(5);
+
     transform: scale(5);
+
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
     filter: alpha(opacity=.5);
+
     opacity: .5;
+
 }*/
 
 .view-tenth:hover .mask {
@@ -2912,7 +2921,9 @@ ol.unstyled {
 
 
 /**
+
   MEDIA QUERIES
+
 */
 
 
@@ -3398,8 +3409,11 @@ p {
 
 
 /*
+
     Component: Buttons
+
 -------------------------
+
 */
 
 .btn {
@@ -5046,5 +5060,110 @@ div.header h3 {
     .avatar-48 {
         width: 32px;
         height: 32px
+    }
+}
+
+.partner-center {
+    text-align: center;
+}
+
+.partner-center p {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+}
+
+.partner-center .box-p {
+    border: 1px dashed #34d986;
+    padding: 10px;
+}
+
+.about-cont-center h2 {
+    text-align: center;
+    color: #1e9a1e;
+    font-weight: 600;
+}
+
+.about-cont-center .p-title {
+    text-align: center;
+}
+
+.about-cont-center .p-title h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #1e9a1e;
+    font-weight: 600;
+}
+
+.about-cont-center .p-title span {
+    text-align: center;
+    color: #ff0000;
+    font-size: 18px;
+    padding: 10px;
+    background: #ddd;
+    display: inline-block;
+}
+
+.about-cont-center p {
+    font-size: 16px;
+    color: #333;
+}
+
+.media img.patner {
+    width: 150px;
+    height: 150px;
+}
+
+.partner-center p {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+}
+
+.partner-center .box-p {
+    border: 1px dashed #34d986;
+    padding: 10px;
+}
+
+.about-cont-center h2 {
+    text-align: center;
+    color: #1e9a1e;
+    font-weight: 600;
+}
+
+.about-cont-center .p-title {
+    text-align: center;
+}
+
+.about-cont-center .p-title h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #1e9a1e;
+    font-weight: 600;
+}
+
+.about-cont-center .p-title span {
+    text-align: center;
+    color: #ff0000;
+    font-size: 18px;
+    padding: 10px;
+    background: #ddd;
+    display: inline-block;
+}
+
+.about-cont-center p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 480px) {
+    .media .media-left,
+    .media .media-body,
+    .media .media-left img {
+        width: 100%;
+    }
+    .media .media-left {
+        display: block;
+        margin-bottom: 10px;
     }
 }
