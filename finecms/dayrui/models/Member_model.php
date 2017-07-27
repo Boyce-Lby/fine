@@ -104,8 +104,8 @@ class Member_model extends CI_Model {
             $data['avatar_url'] =  ucsso_get_avatar($uid);
         } else {
             foreach (array('png', 'jpg', 'gif', 'jpeg') as $ext) {
-                if (is_file(SYS_UPLOAD_PATH.'/member/'.$uid.'/45x45.'.$ext)) {
-                    $data['avatar_url'] = SYS_ATTACHMENT_URL.'member/'.$uid.'/45x45.'.$ext;
+                if (is_file(SYS_UPLOAD_PATH.'/member/'.$uid.'/180x180.'.$ext)) {
+                    $data['avatar_url'] = SYS_ATTACHMENT_URL.'member/'.$uid.'/180x180.'.$ext;
                     break;
                 }
             }
